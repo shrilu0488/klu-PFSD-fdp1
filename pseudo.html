@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <title>Pseudo Classes & Pseudo elements </title>
+    <style>
+        .cl{
+            list-style-type:none;
+        }
+        .cl li::before{
+            content:"\2717";
+            color:blue;
+            margin-right:5px;
+        }
+        input[type="number"]:out-of-range{
+            border: 2px solid red;
+        }
+        input[type="number"]:in-range{
+            border: 2px solid green;
+        }
+        input[type="email"]:invalid{
+            border: 2px solid red;
+        }
+        input[type="email"]::placeholder{
+           color: #ff0066;
+        }
+        p::first-line{
+            text-decoration: underline;
+        }
+        p::first-letter{
+            font-size: 20px;
+            color: red;
+        }
+        p::before{
+            content: "KLU :";
+        }
+        p::after{
+            content: "END";
+        }
+        p::selection{
+            background-color: gray;
+            color:aqua;
+        }
+
+    </style>
+        
+    
+    </head>
+    <body>
+        <input type="number" placeholder="enter age" min="0" max="18" style="width: 500px;">
+        <br></br>
+        <input type="email" placeholder="enter email">
+        <br></br>
+        <p>
+            Many novice writers tend to make a sharp distinction between content and style, thinking that a paper can be strong in one and weak in the other, but focusing on organization shows how content and style converge in deliberative academic writing. Your professors will view even the most elegant prose as rambling and tedious if there isn’t a careful, coherent argument to give the text meaning. Paragraphs are the “stuff ” of academic writing and, thus, worth our attention here.
+
+Key Sentences (a.k.a. Topic Sentences)
+        </p>
+        <ul>
+            <li>KL University Hyderabad</li>
+            <li>PFSD</li>
+            <li>FDP</li>
+        </ul>
+        <ul class="cl">
+            <li>KL University Hyderabad</li>
+            <li>PFSD</li>
+            <li>Short Term Course</li>
+            <li>Day1</li>
+        </ul>
+    </body>
+</html>
