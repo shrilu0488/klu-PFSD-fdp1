@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>  
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>FlexUsecase</title>
+        <style>
+            .parent{
+                display: flex;
+                /* justify-content: center;
+                height: 100vh;
+                align-items: flex-end;
+                flex-direction: row-reverse;*/
+                flex-wrap: wrap-reverse;
+            }
+            .common{
+                color: white;
+                border: 1px solid gray;
+                margin: 20px;
+                padding: 20px;
+                }
+            .div1{
+                background-color: red;
+                order: 9;
+                /*flex-basis: 20vw;*/
+                /*order: inherit;*/
+                /*flex-grow: initial;*/
+                flex-shrink: var(---Row--)
+            }
+            .div2{
+                background-color:green;
+                order: 10;
+            }
+            .div3{
+                background-color:blue;
+            }
+        </style>
+    </head>
+    <body>
+        <!--Parent-->
+        <section class="parent"></section>
+           <!--Flex-Item1-->
+        <section class="parent__logo">
+        <img src="logo.png" alt="error">
+         <!--Flex-Item 2-->
+            <section class="parent_menu">
+                <a href="#"><i class="fa fa-home"></i>Home</a>
+                <a href="#"><i class="fa fa-info-circle"></i>About</a>
+                <a href="#"><i class="fa fa-briefcase"></i>Portfolio</a>
+                <a href="#"><i class="fa fa-sign-in"></i>Login</a>
+            </section>
+        </section>
+
+           
+    </body>
+</html>
